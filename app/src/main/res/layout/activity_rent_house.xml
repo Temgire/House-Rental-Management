@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rent_House">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF5722"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Note:Prices given are Per Week Prices"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_margin="5dp"
+                    android:onClick="Book1"
+                    android:id="@+id/cd1">
+
+                    <ImageView
+                        android:id="@+id/house1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp"
+                        android:layout_margin="5dp"
+                        app:srcCompat="@drawable/h1" />
+
+                    <TextView
+                        android:id="@+id/h1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|bottom"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="40000 RS"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/hh1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:id="@+id/cd2"
+                    android:onClick="Book2"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:id="@+id/house2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp"
+                        app:srcCompat="@drawable/h2" />
+
+                    <TextView
+                        android:id="@+id/h2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="48000 RS"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/hh2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:id="@+id/cd3"
+                    android:onClick="Book3"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:id="@+id/house3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp"
+                        app:srcCompat="@drawable/h3" />
+
+                    <TextView
+                        android:id="@+id/h3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="55000 RS"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/hh3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:id="@+id/cd4"
+                    android:onClick="Book4"
+                    android:layout_height="300dp"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:id="@+id/house4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp"
+                        app:srcCompat="@drawable/h4" />
+
+                    <TextView
+                        android:id="@+id/h4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="65000 RS"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/hh4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:id="@+id/cd5"
+                    android:onClick="Book5"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:id="@+id/house5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp"
+                        app:srcCompat="@drawable/h5" />
+
+                    <TextView
+                        android:id="@+id/h5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="30000 RS"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/hh5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:id="@+id/cd6"
+                    android:onClick="Book6"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:id="@+id/house6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp"
+                        app:srcCompat="@drawable/h6" />
+
+                    <TextView
+                        android:id="@+id/h6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="35000 RS"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/hh6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
